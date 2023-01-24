@@ -10,13 +10,14 @@ This is the initial Classification Markup Notation implementation along with it'
   | booleanList          |   See the section on boolean list below              |
   | complexList          |   See the section on complex lists below             |
   | decimal              |   A arabic decimal                                   |
+  | decimalList          |   A list of arabic decimal                           |
   | integer              |   A arabic integer                                   |
   | integerList          |   A list of arabic integers                          |
   | list                 |   See the section on lists below                     |
   | table                |   See the section on tables below                    |
-  | ten64decimal         |   A binary decimal see ten64.adligo.org              |
-  | ten64integer         |   A binary integer see ten64.adligo.org              |
-  | ten64integerList     |   A list of integers see ten64.adligo.org            |
+  | ten64Decimal         |   A binary decimal see ten64.adligo.org              |
+  | ten64Integer         |   A binary integer see ten64.adligo.org              |
+  | ten64IntegerList     |   A list of integers see ten64.adligo.org            |
   | text                 |   See the section on text below                      |
   | textSegment          |   See the section on text segments below             |
   | textList             |   See the section on text lists below                |
@@ -43,3 +44,19 @@ This is the initial Classification Markup Notation implementation along with it'
    ```
    {<org.example.mypackage.MyPersonClass> firstName=John; lastName=Doe; }
    ```
+   
+   ## Classification Markup Notation Text Escapes
+   The following table illustrates the #CMN escapes, extending XML escapes with the semicolon escape &semi; Generally escapes
+   should only be used when necessary.
+   
+   |  Original character  |  Escaped character  |
+   |----------------------|---------------------|
+   | &	                  | &amp;               |
+   | >	                  | &gt;                |
+   | <	                  | &lt;                |
+   | ;                    | &semi;              |
+   | "                    |	&quot;              |
+   | '                    |	&apos;              |
+
+
+
