@@ -7,14 +7,39 @@ This is the initial Classification Markup Notation implementation along with it'
   |----------------------|------------------------------------------------------|
   | binary               |   See the section on binary and meta classification  |
   | boolean              |   t = true, f = false                                |
-  | boolean list         |   See the section on boolean list below              |
-  | complex list         |   See the section on complex lists below             |
-  | decimal ten64        |   A binary decimal see ten64.adligo.org              |
-  | integer ten64        |   A binary integer see ten64.adligo.org              |
-  | integer list ten64   |   A list of integers see ten64.adligo.org            |
+  | booleanList          |   See the section on boolean list below              |
+  | complexList          |   See the section on complex lists below             |
+  | decimal              |   A arabic decimal                                   |
+  | integer              |   A arabic integer                                   |
+  | integerList          |   A list of arabic integers                          |
   | list                 |   See the section on lists below                     |
   | table                |   See the section on tables below                    |
+  | ten64decimal         |   A binary decimal see ten64.adligo.org              |
+  | ten64integer         |   A binary integer see ten64.adligo.org              |
+  | ten64integerList     |   A list of integers see ten64.adligo.org            |
   | text                 |   See the section on text below                      |
-  | text segment         |   See the section on text segments below             |
-  | text list            |   See the section on text lists below                |
+  | textSegment          |   See the section on text segments below             |
+  | textList             |   See the section on text lists below                |
   | object               |   See the section on objects below                   |
+
+## Schema Objects
+   Before any #CMN (from here on abbreviation for Classification Markup Notation) can be written or read a schema MUST exist.  #CMN schemas are comprised of #CMN objects which are grouped into packages simmilar to Java.  The following example illustrates a simple class object;
+   ```
+    {<class>
+      name=MyPersonClass;
+      package=org.example.mypackage;
+      fields={
+        firstName={class=textSegment;max=75;}
+        lastName={class=textSegment;max=100;}
+      }
+    }
+   ```
+   
+   This schema could be used to write a file that looked like this;
+   ```
+   { firstName=John; lastName=Doe; }
+   ```
+   Or optionaly if metadata was required, to later identify the class depending on the context.  It could be written as;
+      ```
+   {<org.example.mypackage.MyPersonClass> firstName=John; lastName=Doe; }
+   ```
