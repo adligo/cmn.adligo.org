@@ -51,12 +51,12 @@ This is the initial Classification Markup Notation implementation along with it'
    
    |  Original character  |  Escaped character  |
    |----------------------|---------------------|
-   | &	                  | &amp;               |
-   | >	                  | &gt;                |
-   | <	                  | &lt;                |
-   | ;                    | &semi;              |
-   | "                    |	&quot;              |
-   | '                    |	&apos;              |
+   | &	                  | &amp;amp;           |
+   | >	                  | &amp;gt;            |
+   | <	                  | &amp;lt;            |
+   | ;                    | &amp;semi;          |
+   | "                    |	&amp;quot;          |
+   | '                    |	&amp;apos;          |
 
 
 
