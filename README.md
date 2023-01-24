@@ -1,6 +1,6 @@
 # cmn.adligo.org
 This is the initial Classification Markup Notation implementation along with it's IETF RFC.  This is a general purpose binary format for streaming or storage which will compete with YAML, XML, JSON, Google Protocol Buffers and many other markup languages and APIs.  Although it is a binary format, the octects for labels and reserved characters are all UTF8 (and restricting to the single byte ASCII 7 UTF8 characters is really suggested for speed).  This allows piping of this format into files that any UTF8 compatable text editor SHOULD be able to read / render in most cases.  In some cases the binary octets MAY not render in a UTF8 compatable text editor, so eventually specialized viewers and editors MAY become useful.
-  The two main distinctions between this notation and others are;
+  The main distinctions between this notation and others are;
 #### Multiple line text  
 #### Inclusion of the Binary Type
 #### Tables are given equal priority to Objects
