@@ -72,12 +72,12 @@ This is the initial Classification Markup Notation implementation along with it'
       }
     }
    ```
-   Although it is impossible to illustrate how the bytes actually look in this webpage, it would look like this with <bytesGoHere/> representing the bytes in the file or stream;
+   Although it is impossible to illustrate how the bytes actually look in this webpage, it would look like this with &lt;bytesGoHere/&gt; representing the bytes in the file or stream;
    ```
    {<org.example.mypackage.MyImageClass>
      bytes=<size=97;><bytesGoHere/>;
      type=png;
    }
    ```
-   Note that the semi colon after <bytesGoHere/> is NOT necessary, as the number of bytes 97 in this case, is provided by the metadata included in the bytes value section.
+   Note that the semi colon after &lt;bytesGoHere/&gt; is NOT necessary, as the number of bytes 97 in this case, is provided by the metadata included in the bytes value section.
    
