@@ -40,6 +40,6 @@ This is the initial Classification Markup Notation implementation along with it'
    { firstName=John; lastName=Doe; }
    ```
    Or optionaly if metadata was required, to later identify the class depending on the context.  It could be written as;
-      ```
+   ```
    {<org.example.mypackage.MyPersonClass> firstName=John; lastName=Doe; }
    ```
