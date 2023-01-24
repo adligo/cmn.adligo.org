@@ -61,7 +61,8 @@ This is the initial Classification Markup Notation implementation along with it'
 
 ## Binary
   One of the basic things missing from XML and JSON is a simple method to include binary.  The following illustrates a #CMN class that stores a image in binary;
-    ```
+  
+   ```
     {<class>
       name=MyImageClass;
       package=org.example.mypackage;
