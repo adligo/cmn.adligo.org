@@ -14,7 +14,8 @@ This is the initial Classification Markup Notation implementation along with it'
   | booleanList          |   See the section on boolean list below              |
   | complexList          |   See the section on complex lists below             |
   | decimal              |   A arabic decimal                                   |
-  | decimalList          |   A list of arabic decimals                           |
+  | decimalList          |   A list of arabic decimals                          |
+  | field                |   A type for class fields                            |
   | integer              |   A arabic integer                                   |
   | integerList          |   A list of arabic integers                          |
   | list                 |   See the section on lists below                     |
