@@ -73,7 +73,8 @@ This is the initial Classification Markup Notation implementation along with it'
     }
    ```
    Although it is impossible to illustrate how the bytes actually look in this webpage, it would look like this with <bytesGoHere/> representing the bytes in the file or stream;
-   ```{<org.example.mypackage.MyImageClass>
+   ```
+   {<org.example.mypackage.MyImageClass>
         bytes=<size=97;><bytesGoHere/>;
         type=png;
       }
