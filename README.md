@@ -84,5 +84,5 @@ This is the initial Classification Markup Notation implementation along with it'
      type=png;
    }
    ```
-   Note that the semi colon after &lt;bytesGoHere/&gt; is NOT necessary, as the number of bytes 97 in this case, is provided by the metadata included in the bytes value section.
+   Note that the semi colon after &lt;bytesGoHere/&gt; is NOT necessary, as the number of bytes 97 in this case, is provided by the metadata included in the bytes value metadata section.
    
