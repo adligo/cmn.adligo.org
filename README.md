@@ -10,7 +10,7 @@ This is the initial Classification Markup Notation implementation along with it'
   | booleanList          |   See the section on boolean list below              |
   | complexList          |   See the section on complex lists below             |
   | decimal              |   A arabic decimal                                   |
-  | decimalList          |   A list of arabic decimal                           |
+  | decimalList          |   A list of arabic decimals                           |
   | integer              |   A arabic integer                                   |
   | integerList          |   A list of arabic integers                          |
   | list                 |   See the section on lists below                     |
@@ -20,7 +20,7 @@ This is the initial Classification Markup Notation implementation along with it'
   | ten64IntegerList     |   A list of integers see ten64.adligo.org            |
   | text                 |   See the section on text below                      |
   | textSegment          |   See the section on text segments below             |
-  | textList             |   See the section on text lists below                |
+  | textSegmentList      |   See the section on text lists below                |
   | object               |   See the section on objects below                   |
 
 ## Schema Objects
@@ -59,4 +59,23 @@ This is the initial Classification Markup Notation implementation along with it'
    | '                    |	&amp;apos;          |
 
 
-
+## Binary
+  One of the basic things missing from XML and JSON is a simple method to include binary.  The following illustrates a #CMN class that stores a image in binary;
+    ```
+    {<class>
+      name=MyImageClass;
+      package=org.example.mypackage;
+      fields={
+        bytes={class=binary;max=750;}
+        type={class=textSegment;max=4;}
+      }
+    }
+   ```
+   Although it is impossible to illustrate how the bytes actually look in this webpage, it would look like this with <bytesGoHere/> representing the bytes in the file or stream;
+   ```{<org.example.mypackage.MyImageClass>
+        bytes=<size=97;><bytesGoHere/>;
+        type=png;
+      }
+   ```
+   Note that the semi colon after <bytesGoHere/> is NOT necessary, as the number of bytes 97 in this case, is provided by the metadata included in the bytes value section.
+   
